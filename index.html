@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Dentalist | Example Designing & Developing Website</title>
+    <title>Клиника Бошанова: Улыбка вашей мечты</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/main.css" type="text/css">
@@ -83,27 +83,21 @@
                 <nav class="hidden lg:block">
                     <ul class="flex gap-x-10 xl:gap-x-12 text-slate-800 text-sm font-bold child:transition-colors child:delay-75 child-hover:text-primary">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#home">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Services</a>
+                            <a href="#services">Услуги</a>
                         </li>
                         <li>
-                            <a href="#">Products</a>
+                            <a href="#about">О нас</a>
                         </li>
                         <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#call">Связаться с нами</a>
                         </li>
                     </ul>
                 </nav>
                 <!-- Header Button -->
-                <a class="hidden lg:block h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
+                <a class="hidden lg:block h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на прием</a>
                 <!-- Mobile Menu -->
                 <div class="lg:hidden relative">
                     <!-- Mobile Menu Toggle Icon -->
@@ -132,38 +126,20 @@
                             <ul class="flex flex-col gap-y-5 text-slate-800 text-sm font-medium child:transition-colors child:delay-75 child-hover:text-primary">
                                 <!-- menu item -->
                                 <li>
-                                    <a class="flex items-center gap-x-1" href="#">
+                                    <a class="flex items-center gap-x-1" href="#home">
                                         <svg class="w-5 h-5">
                                             <use href="#home"></use>
                                         </svg>
-                                        Home
+                                        Главная
                                     </a>
                                 </li>
                                 <!-- menu item -->
                                 <li>
-                                    <a class="flex items-center gap-x-1" href="#">
+                                    <a class="flex items-center gap-x-1" href="#services">
                                         <svg class="w-5 h-5">
                                             <use href="#gear"></use>
                                         </svg>
-                                        Services
-                                    </a>
-                                </li>
-                                <!-- menu item -->
-                                <li>
-                                    <a class="flex items-center gap-x-1" href="#">
-                                        <svg class="w-5 h-5">
-                                            <use href="#shop"></use>
-                                        </svg>
-                                        Products
-                                    </a>
-                                </li>
-                                <!-- menu item -->
-                                <li>
-                                    <a class="flex items-center gap-x-1" href="#">
-                                        <svg class="w-5 h-5">
-                                            <use href="#rss"></use>
-                                        </svg>
-                                        Blog
+                                        Услуги
                                     </a>
                                 </li>
                                 <!-- menu item -->
@@ -172,16 +148,16 @@
                                         <svg class="w-5 h-5">
                                             <use href="#users"></use>
                                         </svg>
-                                        About Us
+                                        О нас
                                     </a>
                                 </li>
                                 <!-- menu item -->
                                 <li>
-                                    <a class="flex items-center gap-x-1" href="#">
+                                    <a class="flex items-center gap-x-1" href="#call">
                                         <svg class="w-5 h-5">
                                             <use href="#envelope"></use>
                                         </svg>
-                                        Contact Us
+                                        Связаться с нами
                                     </a>
                                 </li>
                             </ul>
@@ -198,38 +174,35 @@
     <!-- Main -->
     <main id="main">
         <!-- Top Main Section -->
-        <section class="mb-12 lg:mb-16 xl:mb-24">
+        <section class="mb-12 lg:mb-16 xl:mb-24" id="home">
             <div class="container">
                 <div class="bg-top-main pt-8 px-8 lg:pt-0 rounded-3xl lg:min-h-[500px] xl:min-h-[620px] 2xl:min-h-[760px] gap-y-14 flex flex-col lg:flex-row justify-between items-center bg-[#DBEFFA]">
                     <div class="lg:w-1/2 text-center items-center lg:items-start lg:text-start flex flex-col gap-y-6 lg:gap-y-8">
                         <h1 class="text-4xl leading-snug lg:text-5xl lg:leading-snug font-bold text-slate-800">
-                            Entrust your smile to professional
+                            Доверьте свою улыбку профессионалам
                         </h1>
-                        <p class="text-slate-800/70 font-medium text-base lg:text-lg w-[90%]">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-                        <a class="h-12 w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
+                        <p class="text-slate-800/70 font-medium text-base lg:text-lg w-[90%]">Современное оборудование, индивидуальный подход и высокий уровень мастерства — всё для вашего комфорта и здоровья зубов!</p>
+                        <a class="h-12 w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на прием</a>
                     </div>
                     <div class="lg:w-1/2 mt-auto">
-                        <img class="" src="./assets/images/top-main.webp" alt="">
+                        <img class="" src="./assets/images/top-main.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Services Section -->
-        <section class="section mb-32">
+        <section class="section mb-32" id="services">
             <div class="container">
                 <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
                     <!-- Services info contents -->
                     <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
-                        <!-- Left Side-->
                         <div class="text-center lg:text-start">
                             <!-- Title -->
-                            <h3 class="text-sm text-primary font-bold mb-3">SERVICES</h3>
+                            <h3 class="text-sm text-primary font-bold mb-3">УСЛУГИ</h3>
                             <!-- Subtitle -->
-                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Feel amazing about your oral health</p>
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Качественная забота о вашей улыбке</p>
                         </div>
-                        <!-- Right Side -->
-                        <p class="text-center lg:text-start lg:max-w-screen-xs text-[15px] font-medium text-slate-800/70 -mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                     </div>
                     <!-- Services -->
                     <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
@@ -237,39 +210,39 @@
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Dentures</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic,</p>
+                                <h3 class="text-slate-800 font-bold">Съёмные протезы</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Качественные и комфортные протезы от опытных специалистов для вашей уверенной улыбки.</p>
                             </div>
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Implants</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic,</p>
+                                <h3 class="text-slate-800 font-bold">Имплантаты</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Надёжные зубные имплантаты от профессионалов для восстановления вашей улыбки.</p>
                             </div>
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/whiting.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Whitening</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic,</p>
+                                <h3 class="text-slate-800 font-bold">Отбеливание</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Безопасное и эффективное отбеливание зубов для сияющей улыбки.</p>
                             </div>
                         </div>
-                        <!-- Service item --> 
+                        <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/rootcanal.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Root Canal</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic,</p>
+                                <h3 class="text-slate-800 font-bold">Лечение каналов</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Точное и безболезненное лечение корневых каналов опытными стоматологами.</p>
                             </div>
                         </div>
                     </div>
                     <!-- More Service Call to Action Button -->
                     <div class="services-more transition-all">
                         <a href="#" class="w-max mx-auto flex items-center gap-x-1 p-3 rounded-xl text-sm font-bold text-primary bg-primary/10 transition-colors hover:bg-primary/20">
-                            View all service list
+                            Просмотреть весь список услуг
                             <svg class="w-5 h-5">
                                 <use href="#arrow-right-circle"></use>
                             </svg>
@@ -280,24 +253,24 @@
         </section>
 
         <!-- Emergency Section -->
-        <section class="section my-20">
+        <section class="section my-20"  id="home">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center gap-x-20 gap-y-12">
                     <!-- Emergency image -->
                     <div>
-                        <img class="hidden lg:block" src="./assets/images/emergency-desktop.webp" alt="emergency-desktop">
-                        <img class="lg:hidden" src="./assets/images/emergency-mobile.webp" alt="emergency-mobile">
+                        <img class="hidden lg:block" src="./assets/images/emergency-desktop.webp" alt="экстренная помощь десктоп">
+                        <img class="lg:hidden" src="./assets/images/emergency-mobile.webp" alt="экстренная помощь мобильная">
                     </div>
                     <!-- Emergency Contents -->
                     <div class="flex flex-col gap-y-4 text-center lg:text-start">
                         <!-- Title -->
-                        <h4 class="text-sm text-primary font-bold">Dental 24H Emergency</h4>
+                        <h4 class="text-sm text-primary font-bold">Стоматологическая помощь 24 часа</h4>
                         <!-- Subtitle -->
-                        <p class="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">friendly treatment from our locally practice.</p>
-                        <!-- Description --> 
-                        <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <p class="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">Дружелюбное лечение от нашей местной команды</p>
+                        <!-- Description -->
+                        <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Круглосуточная экстренная помощь от профессиональных стоматологов с использованием современного оборудования для вашего комфорта и здоровья.</p>
                         <!-- Button Call to Action -->
-                        <a class="h-12 w-44 mx-auto bg-primary text-white text-sm font-bold text-center leading-[3rem] mt-6 lg:mt-8 lg:mx-0 rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
+                        <a class="h-12 w-44 mx-auto bg-primary text-white text-sm font-bold text-center leading-[3rem] mt-6 lg:mt-8 lg:mx-0 rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на приём</a>
                     </div>
                 </div>
             </div>
@@ -306,17 +279,16 @@
         <!-- Features Section -->
         <section class="section py-16">
             <div class="container">
-                <!-- p-8 md:px-20 md:py-16 lg:px-60 lg:py-20 -->
                 <!-- Feature Container -->
                 <div class="bg-[#DBDEFA] p-10 sm:p-12 md:px-16 md:py-[3.5rem] lg:px-32 lg:py-20 xl:py-24 xl:px-60 rounded-3xl">
                     <!-- Feature info -->
                     <div class="flex flex-col gap-y-4 mb-12 sm:mb-14 md:mb-16 lg:mb-20 text-center lg:text-start">
                         <!-- Title -->
-                        <h4 class="text-sm text-primary font-bold">Features</h4>
+                        <h4 class="text-sm text-primary font-bold">Особенности</h4>
                         <!-- Subtitle -->
-                        <p class="text-slate-800 text-4xl leading-snug font-bold">Specialized care through experience</p>
+                        <p class="text-slate-800 text-4xl leading-snug font-bold">Специализированная помощь благодаря опыту</p>
                         <!-- Description -->
-                        <p class="text-[15px] font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                        <p class="text-[15px] font-medium text-slate-800/50">Индивидуальный подход и профессиональные решения для здоровья ваших зубов от нашей команды экспертов.</p>
                     </div>
                     <!-- Features -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-14">
@@ -324,56 +296,56 @@
                         <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
                             <!-- Feature image -->
                             <div class="w-16 h-16 shrink-0">
-                                <img src="./assets/images/Safety-first.png" alt="Safety-first">
+                                <img src="./assets/images/Safety-first.png" alt="Безопасность превыше всего">
                             </div>
                             <!-- Feature Content -->
                             <div class="text-center xs:text-start sm:text-center lg:text-start">
                                 <!-- Feature item title -->
-                                <p class="text-slate-800 font-bold mb-1">Safety first</p>
+                                <p class="text-slate-800 font-bold mb-1">Безопасность превыше всего</p>
                                 <!-- Feature item Description -->
-                                <p class="text-sm font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic ...</p>
+                                <p class="text-sm font-medium text-slate-800/50">Мы используем только проверенные методы и стерильное оборудование для вашего спокойствия.</p>
                             </div>
                         </div>
                         <!-- Feature item -->
                         <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
                             <!-- Feature image -->
                             <div class="w-16 h-16 shrink-0">
-                                <img src="./assets/images/Insurance-accepted.png" alt="Insurance-accepted">
+                                <img src="./assets/images/Insurance-accepted.png" alt="Принимаем страховку">
                             </div>
                             <!-- Feature Content -->
                             <div class="text-center xs:text-start sm:text-center lg:text-start">
                                 <!-- Feature item title -->
-                                <p class="text-slate-800 font-bold mb-1">Insurance accepted</p>
+                                <p class="text-slate-800 font-bold mb-1">Принимаем страховку</p>
                                 <!-- Feature item Description -->
-                                <p class="text-sm font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic ...</p>
+                                <p class="text-sm font-medium text-slate-800/50">Удобная оплата через страховые программы для вашего комфорта.</p>
                             </div>
                         </div>
                         <!-- Feature item -->
                         <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
                             <!-- Feature image -->
                             <div class="w-16 h-16 shrink-0">
-                                <img src="./assets/images/Fullservice-dentistry.png" alt="Fullservice-dentistry">
+                                <img src="./assets/images/Fullservice-dentistry.png" alt="Полный спектр услуг">
                             </div>
                             <!-- Feature Content -->
                             <div class="text-center xs:text-start sm:text-center lg:text-start">
                                 <!-- Feature item title -->
-                                <p class="text-slate-800 font-bold mb-1">Full-service dentistry</p>
+                                <p class="text-slate-800 font-bold mb-1">Полный спектр услуг</p>
                                 <!-- Feature item Description -->
-                                <p class="text-sm font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic ...</p>
+                                <p class="text-sm font-medium text-slate-800/50">От профилактики до сложных процедур — всё в одном месте.</p>
                             </div>
                         </div>
                         <!-- Feature item -->
                         <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
                             <!-- Feature image -->
                             <div class="w-16 h-16 shrink-0">
-                                <img src="./assets/images/No-judgment-ever.png" alt="No-judgment-ever">
+                                <img src="./assets/images/No-judgment-ever.png" alt="Без осуждения">
                             </div>
                             <!-- Feature Content -->
                             <div class="text-center xs:text-start sm:text-center lg:text-start">
                                 <!-- Feature item title -->
-                                <p class="text-slate-800 font-bold mb-1">No judgment ever</p>
+                                <p class="text-slate-800 font-bold mb-1">Без осуждения</p>
                                 <!-- Feature item Description -->
-                                <p class="text-sm font-medium text-slate-800/50">Lorem ipsum is placeholder text commonly used in the graphic ...</p>
+                                <p class="text-sm font-medium text-slate-800/50">Дружелюбная атмосфера и поддержка на каждом этапе лечения.</p>
                             </div>
                         </div>
                     </div>
@@ -388,43 +360,43 @@
                     <!-- Emergency Contents -->
                     <div class="flex flex-col gap-y-4 text-center lg:text-start">
                         <!-- Title -->
-                        <h4 class="text-sm text-primary font-bold">EXPERTS IN DENTAL</h4>
+                        <h4 class="text-sm text-primary font-bold">ЭКСПЕРТЫ В СТОМАТОЛОГИИ</h4>
                         <!-- Subtitle -->
-                        <p class="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">First class dentistry, from top dentists.</p>
+                        <p class="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">Стоматология первого класса от лучших врачей</p>
                         <!-- Description -->
-                        <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                        <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Профессиональная забота о вашей улыбке с использованием передовых технологий и индивидуального подхода.</p>
                         <div class="flex flex-col gap-y-2 child:text-[#181945] child:text-[15px] child:font-medium mt-4">
                             <p class="flex items-center gap-x-2">
                                 <svg class="w-5 h-5 text-primary">
                                     <use href="#check-circle"></use>
                                 </svg>
-                                Top quality dental team
+                                Команда стоматологов высшего уровня
                             </p>
                             <p class="flex items-center gap-x-2">
                                 <svg class="w-5 h-5 text-primary">
                                     <use href="#check-circle"></use>
                                 </svg>
-                                State of the art dental services
+                                Современные стоматологические услуги
                             </p>
                             <p class="flex items-center gap-x-2">
                                 <svg class="w-5 h-5 text-primary">
                                     <use href="#check-circle"></use>
                                 </svg>
-                                Discount on all dental treatment
+                                Скидки на все виды лечения
                             </p>
                         </div>
                     </div>
-                     <!-- Emergency image -->
-                     <div class="flex order-first lg:order-last">
-                        <img class="hidden lg:block" src="./assets/images/expert-in-dental-desktop.webp" alt="expert-in-dental-desktop.png">
-                        <img class="lg:hidden" src="./assets/images/expert-in-dental-mobile.webp" alt="expert-in-dental-mobile.png">
+                    <!-- Emergency image -->
+                    <div class="flex order-first lg:order-last">
+                        <img class="hidden lg:block" src="./assets/images/expert-in-dental-desktop.webp" alt="эксперты в стоматологии десктоп">
+                        <img class="lg:hidden" src="./assets/images/expert-in-dental-mobile.webp" alt="эксперты в стоматологии мобильная">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- TESTIMONIAL Section  -->
-        <section class="section py-16">
+        <section class="section py-16" id="about">
             <div class="container">
                 <div class="bg-[#D9EBFA] rounded-3xl p-10 md:px-16 md:py-[3.5rem] lg:py-20 xl:py-24">
                     <!-- TESTIMONIAL info contents -->
@@ -432,12 +404,12 @@
                         <!-- Left Side-->
                         <div class="text-center lg:text-start">
                             <!-- Title -->
-                            <h3 class="text-sm text-primary font-bold mb-3">TESTIMONIAL</h3>
+                            <h3 class="text-sm text-primary font-bold mb-3">ОТЗЫВЫ</h3>
                             <!-- Subtitle -->
-                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[400px] leading-snug xs:leading-snug font-bold">What people have said about us</p>
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[400px] leading-snug xs:leading-snug font-bold">Что говорят о нас люди</p>
                         </div>
                         <!-- Right Side -->
-                        <p class="text-center lg:text-start lg:max-w-sm text-[15px] font-medium text-slate-800/70 -mb-8">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                        <p class="text-center lg:text-start lg:max-w-sm text-[15px] font-medium text-slate-800/70 -mb-8">Реальные истории наших пациентов о качестве услуг и заботе, которую мы предоставляем.</p>
                     </div>
                     <!-- User TESTIMONIAL -->
                     <div class="swiper swiper-1">
@@ -446,13 +418,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-1.webp" alt="user-avatar-1">
+                                    <img src="./assets/images/user-avatar-1.webp" alt="аватар пользователя 1">
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Robert Fox</p>
+                                    <p class="font-bold text-slate-800 mb-2">Роберт Фокс</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Отличный сервис и профессиональные врачи, которые сделали мою улыбку идеальной!</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -476,13 +448,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-2.webp" alt="user-avatar-2">
+                                    <img src="./assets/images/user-avatar-2.webp" alt="аватар пользователя 2">
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Albert Flores</p>
+                                    <p class="font-bold text-slate-800 mb-2">Альберт Флорес</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Быстрое и безболезненное лечение, я доволен результатом и отношением персонала.</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -506,13 +478,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-3.webp" alt="user-avatar-3">
+                                    <img src="./assets/images/user-avatar-3.webp" alt="аватар пользователя 3">
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Bessie Cooper</p>
+                                    <p class="font-bold text-slate-800 mb-2">Бесси Купер</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Лучшая стоматология! Профессионализм и забота на высшем уровне.</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -536,13 +508,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-4.webp" alt="user-avatar-3">
+                                    <img src="./assets/images/user-avatar-4.webp" alt="аватар пользователя 4">
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">David Martin</p>
+                                    <p class="font-bold text-slate-800 mb-2">Дэвид Мартин</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Комфортная атмосфера и качественное лечение, рекомендую всем!</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -569,205 +541,77 @@
             </div>
         </section>
 
-        <!-- Blog Post Section -->
-        <section class="section py-16">
-            <div class="container">
-                <!-- Blog Post info -->
-                <div class="text-center flex flex-col gap-y-4 mb-14 md:mb-16">
-                    <!-- Title -->
-                    <h4 class="text-sm text-primary font-bold">BLOG</h4>
-                    <!-- Subtitle -->
-                    <p class="text-slate-800 text-4xl leading-snug font-bold">Stay updated with our latest news</p>
-                </div>
-                <!-- Posts -->
-                <div class="swiper swiper-2">
-                    <div class="swiper-wrapper">
-                        <!-- Post item -->
-                        <div class="swiper-slide flex flex-col gap-y-6 border rounded-[32px] p-4">
-                            <!-- Post image -->
-                            <div class="relative">
-                                <a class="post-img block child:block" href="#">
-                                    <img class="block w-full" src="./assets/images/blog-post-1.webp" alt="blog-post-1">
-                                </a>
-                                <!-- Publish Post Date -->
-                                <div class="post-publish-date absolute left-5 top-5 sm:left-4 sm:top-4 w-14 h-14 bg-white p-2 flex flex-col rounded-xl text-center items-center justify-center">
-                                    <span class="font-bold text-slate-800">23</span>
-                                    <span class="text-sm font-bold text-slate-800/70 -mt-1">Jan</span>
-                                </div>
-                            </div>
-                            <!-- Post contents -->
-                            <div class="flex flex-col gap-y-2 px-1">
-                                <!-- Post Category -->
-                                <a href="#" class="text-xs text-primary font-bold">TECHNOLOGY</a>
-                                <!-- Post Title -->
-                                <h4 class="font-bold text-slate-800"><a href="#">New Technology Make for Dental Operation</a></h4>
-                                <!-- Post Excerption -->
-                                <p class="line-clamp-2 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
-                            </div>
-                        </div>
-                        <!-- Post item -->
-                        <div class="swiper-slide flex flex-col gap-y-6 border rounded-[32px] p-4">
-                            <!-- Post image -->
-                            <div class="relative">
-                                <a class="post-img block child:block" href="#">
-                                    <img class="block w-full" src="./assets/images/blog-post-2.webp" alt="blog-post-2">
-                                </a>
-                                <!-- Publish Post Date -->
-                                <div class="post-publish-date absolute left-5 top-5 sm:left-4 sm:top-4 w-14 h-14 bg-white p-2 flex flex-col rounded-xl text-center items-center justify-center">
-                                    <span class="font-bold text-slate-800">23</span>
-                                    <span class="text-sm font-bold text-slate-800/70 -mt-1">Jan</span>
-                                </div>
-                            </div>
-                            <!-- Post contents -->
-                            <div class="flex flex-col gap-y-2 px-1">
-                                <!-- Post Category -->
-                                <a href="#" class="text-xs text-primary font-bold">DENTAL</a>
-                                <!-- Post Title -->
-                                <h4 class="font-bold text-slate-800"><a href="#">Regular Dental care make Your Smile Brighter</a></h4>
-                                <!-- Post Excerption -->
-                                <p class="line-clamp-2 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
-                            </div>
-                        </div>
-                        <!-- Post item -->
-                        <div class="swiper-slide flex flex-col gap-y-6 border rounded-[32px] p-4">
-                            <!-- Post image -->
-                            <div class="relative">
-                                <a class="post-img block child:block" href="#">
-                                    <img class="block w-full" src="./assets/images/blog-post-3.webp" alt="blog-post-3">
-                                </a>
-                                <!-- Publish Post Date -->
-                                <div class="post-publish-date absolute left-5 top-5 sm:left-4 sm:top-4 w-14 h-14 bg-white p-2 flex flex-col rounded-xl text-center items-center justify-center">
-                                    <span class="font-bold text-slate-800">23</span>
-                                    <span class="text-sm font-bold text-slate-800/70 -mt-1">Jan</span>
-                                </div>
-                            </div>
-                            <!-- Post contents -->
-                            <div class="flex flex-col gap-y-2 px-1">
-                                <!-- Post Category -->
-                                <a href="#" class="text-xs text-primary font-bold">HYGIENE</a>
-                                <!-- Post Title -->
-                                <h4 class="font-bold text-slate-800"><a href="#">Dental Hygiene for All Age to Make Smile</a></h4>
-                                <!-- Post Excerption -->
-                                <p class="line-clamp-2 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
-                            </div>
-                        </div>
-                        <!-- Post item -->
-                        <div class="swiper-slide flex flex-col gap-y-6 border rounded-[32px] p-4">
-                            <!-- Post image -->
-                            <div class="relative">
-                                <a class="post-img block child:block rounded-[32px] sm:rounded-3xl overflow-hidden" href="#">
-                                    <img class="block w-full" src="./assets/images/blog-post-4.webp" alt="blog-post-3">
-                                </a>
-                                <!-- Publish Post Date -->
-                                <div class="post-publish-date absolute left-5 top-5 sm:left-4 sm:top-4 w-14 h-14 bg-white p-2 flex flex-col rounded-xl text-center items-center justify-center">
-                                    <span class="font-bold text-slate-800">23</span>
-                                    <span class="text-sm font-bold text-slate-800/70 -mt-1">Jan</span>
-                                </div>
-                            </div>
-                            <!-- Post contents -->
-                            <div class="flex flex-col gap-y-2 px-1">
-                                <!-- Post Category -->
-                                <a href="#" class="text-xs text-primary font-bold">DENTAL</a>
-                                <!-- Post Title -->
-                                <h4 class="font-bold text-slate-800"><a href="#">Home and Natural Remedies for Toothache</a></h4>
-                                <!-- Post Excerption -->
-                                <p class="line-clamp-2 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
-                            </div>
-                        </div>
-                        <!-- Post item -->
-                        <div class="swiper-slide flex flex-col gap-y-6 border rounded-[32px] p-4">
-                            <!-- Post image -->
-                            <div class="relative">
-                                <a class="post-img block child:block rounded-[32px] sm:rounded-3xl overflow-hidden" href="#">
-                                    <img class="block w-full" src="./assets/images/blog-post-5.webp" alt="blog-post-5">
-                                </a>
-                                <!-- Publish Post Date -->
-                                <div class="post-publish-date absolute left-5 top-5 sm:left-4 sm:top-4 w-14 h-14 bg-white p-2 flex flex-col rounded-xl text-center items-center justify-center">
-                                    <span class="font-bold text-slate-800">23</span>
-                                    <span class="text-sm font-bold text-slate-800/70 -mt-1">Jan</span>
-                                </div>
-                            </div>
-                            <!-- Post contents -->
-                            <div class="flex flex-col gap-y-2 px-1">
-                                <!-- Post Category -->
-                                <a href="#" class="text-xs text-primary font-bold">ACCESSORIES</a>
-                                <!-- Post Title -->
-                                <h4 class="font-bold text-slate-800"><a href="#">How to Choose the Right Toothbrush for You</a></h4>
-                                <!-- Post Excerption -->
-                                <p class="line-clamp-2 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact us Section -->
         <section class="section py-16">
             <div class="container">
                 <div class="flex flex-col lg:flex-row gap-y-6 gap-x-20">
                     <!-- Map image -->
                     <div class="relative lg:w-1/2">
-                        <img class="block w-full h-[440px] xs:h-[500px] lg:h-[610px] xl:h-[680px] object-cover rounded-3xl" src="./assets/images/map-image.webp" alt="map-image">
+                        <img class="block w-full h-[440px] xs:h-[500px] lg:h-[610px] xl:h-[680px] object-cover rounded-3xl" src="./assets/images/map-image.webp" alt="карта">
                         <!-- Absolute Address -->
                         <div class="absolute bg-white p-4 bottom-8 left-8 right-8 rounded-3xl flex gap-x-6 items-center">
                             <!-- icon -->
-                            <img class="block w-16 h-16" src="./assets/images/home-icon.png" alt="home-icon">
+                            <img class="block w-16 h-16" src="./assets/images/home-icon.png" alt="иконка дома">
                             <!-- Address -->
                             <div>
-                                <p class="text-xs text-primary font-bold mb-1">ADDRESS</p>
-                                <p class="font-bold text-slate-800 max-w-[260px]">Place to write an address</p>
+                                <p class="text-xs text-primary font-bold mb-1">АДРЕС</p>
+                                <p class="font-bold text-slate-800 max-w-[260px]">Укажите здесь ваш адрес</p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/2 bg-gray-100 px-4 pt-10 pb-4 rounded-3xl lg:bg-transparent lg:p-0 lg:rounded-none">
+                    <div class="lg:w-1/2 bg-gray-100 px-4 pt-10 pb-4 rounded-3xl lg:bg-transparent lg:p-0 lg:rounded-none" id="call">
                         <!-- Contact us info -->
                         <div class="flex flex-col gap-y-4 text-center lg:text-start">
-                            <h4 class="text-sm text-primary font-bold">BOOK APPOINTMENT</h4>
+                            <h4 class="text-sm text-primary font-bold">ЗАПИСЬ НА ПРИЁМ</h4>
                             <!-- Subtitle -->
-                            <p class="text-slate-800 text-4xl leading-snug font-bold lg:max-w-screen-sm">Care at Dentalist is pleasure</p>
+                            <p class="text-slate-800 text-4xl leading-snug font-bold lg:max-w-screen-sm">Забота в Dentalist — это удовольствие</p>
                             <!-- Description -->
-                            <p class="mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual</p>
+                            <p class="mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Получите качественное лечение от профессиональных стоматологов в комфортной обстановке.</p>
                         </div>
                         <!-- Contact us form -->
                         <form class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-7 mt-10 xl:mt-16">
                             <!-- name input -->
                             <div class="flex flex-col gap-y-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="name">NAME</label>
-                                <input class="form-input" id="name" type="text" placeholder="Enter your name..." required>
+                                <label class="font-bold text-[13px] text-slate-600/90" for="name">ИМЯ</label>
+                                <input class="form-input" id="name" type="text" placeholder="Введите ваше имя..." required>
                                 <svg class="w-6 h-6 absolute bottom-4 left-4 text-slate-400">
                                     <use href="#user"></use>
                                 </svg>
                             </div>
                             <!-- email input -->
                             <div class="flex flex-col gap-y-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="email">EMAIL ADDRESS</label>
-                                <input class="form-input" id="email" type="email" placeholder="Your email address..." required>
+                                <label class="font-bold text-[13px] text-slate-600/90" for="email">ЭЛЕКТРОННАЯ ПОЧТА</label>
+                                <input class="form-input" id="email" type="email" placeholder="Ваш email..." required>
                                 <svg class="w-6 h-6 absolute bottom-4 left-4 text-slate-400">
                                     <use href="#envelope"></use>
                                 </svg>
                             </div>
                             <!-- messages input -->
                             <div class="flex flex-col gap-y-2 sm:col-span-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="message">MESSAGES</label>
-                                <textarea class="form-input min-h-[234px] max-h-[234px] lg:min-h-[116px] lg:max-h-[116px] xl:min-h-[234px] xl:max-h-[234px]" id="message" placeholder="Enter your messages..." required></textarea>
+                                <label class="font-bold text-[13px] text-slate-600/90" for="message">СООБЩЕНИЕ</label>
+                                <textarea class="form-input min-h-[234px] max-h-[234px] lg:min-h-[116px] lg:max-h-[116px] xl:min-h-[234px] xl:max-h-[234px]" id="message" placeholder="Введите ваше сообщение..." required></textarea>
                                 <svg class="w-6 h-6 absolute top-[42px] left-4 text-slate-400">
                                     <use href="#pencil-square"></use>
                                 </svg>
+                            </div>
+                            <div class="flex items-center gap-x-2 mb-4 sm:mb-0">
+                                <input type="checkbox" id="consent" class="w-5 h-5 accent-primary" required>
+                                <label for="consent" class="text-sm text-slate-800/70 cursor-pointer">
+                                    Я согласен(а) с обработкой моих персональных данных
+                                </label>
                             </div>
                             <!-- Form submit button -->
                             <div class="flex items-center justify-between sm:col-span-2">
                                 <!-- Phone number -->
                                 <div class="hidden sm:flex items-center gap-x-4">
-                                    <img class="block w-16 h-16" src="./assets/images/phone-icon.png" alt="phone-icon.png">
+                                    <img class="block w-16 h-16" src="./assets/images/phone-icon.png" alt="иконка телефона">
                                     <div>
-                                        <p class="text-primary font-bold text-sm">Dental 24H Emergency</p>
+                                        <p class="text-primary font-bold text-sm">Стоматология 24 часа</p>
                                         <p class="text-slate-800 font-bold mt-1">01234567890</p>
                                     </div>
                                 </div>
                                 <!-- Submit button -->
-                                <button type="submit" class="h-12 w-full sm:w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800">Book an appointment</button>
+                                <button type="submit" class="h-12 w-full sm:w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800">Записаться на приём</button>
                             </div>
                         </form>
                     </div>
@@ -777,17 +621,17 @@
     </main>
     <!-- Footer -->
     <footer class="bg-[#041434] mt-10">
-        <div class="container">  
+        <div class="container">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-10 xl:gap-x-20 text-white py-16">
                 <!-- About me in Footer -->
                 <div class="sm:col-span-2 lg:col-span-1">
                     <!-- Logo -->
-                    <img src="./assets/images/logo-footer.svg" alt="logo-footer">
+                    <img src="./assets/images/logo-footer.svg" alt="логотип футера">
                     <!-- Description -->
-                    <p class="text-[15px] text-white/70  mt-4">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups....</p>
+                    <p class="text-[15px] text-white/70 mt-4">Мы предоставляем высококачественные стоматологические услуги с использованием современных технологий и индивидуального подхода.</p>
                     <!-- Social in footer -->
                     <div class="mt-8">
-                        <p class="text-[13px] font-medium text-white/70 mb-4">FALLOW US ON</p>
+                        <p class="text-[13px] font-medium text-white/70 mb-4">СЛЕДИТЕ ЗА НАМИ</p>
                         <!-- Socials -->
                         <div class="flex items-center gap-x-4 child:transition-colors child:bg-white/90 child-hover:bg-white child:p-2 child:rounded-lg">
                             <!-- Social item -->
@@ -798,8 +642,8 @@
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1e293b" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
                             </a>
-                             <!-- Social item -->
-                             <a href="#">
+                            <!-- Social item -->
+                            <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1e293b" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
                             </a>
                         </div>
@@ -808,65 +652,65 @@
                 <!-- Quick Access in Footer -->
                 <div>
                     <!-- Title -->
-                    <p class="text-[13px] font-medium text-white/70 mb-6">QUICK LINKS</p>
+                    <p class="text-[13px] font-medium text-white/70 mb-6">БЫСТРЫЕ ССЫЛКИ</p>
                     <!-- Quick Access List -->
                     <ul class="flex flex-col gap-y-4 text-[15px]">
                         <!-- Quick Access item -->
                         <li>
-                            <a class="quick-access-item" href="#">About Us</a>
+                            <a class="quick-access-item" href="#">О нас</a>
                         </li>
                         <!-- Quick Access item -->
                         <li>
-                            <a class="quick-access-item" href="#">Dental Services</a>
+                            <a class="quick-access-item" href="#">Стоматологические услуги</a>
                         </li>
                         <!-- Quick Access item -->
                         <li>
-                            <a class="quick-access-item" href="#">Dentist</a>
+                            <a class="quick-access-item" href="#">Стоматологи</a>
                         </li>
                         <!-- Quick Access item -->
                         <li>
-                            <a class="quick-access-item" href="#">Blog</a>
+                            <a class="quick-access-item" href="#">Блог</a>
                         </li>
                         <!-- Quick Access item -->
                         <li>
-                            <a class="quick-access-item" href="#">FAQs</a>
+                            <a class="quick-access-item" href="#">Часто задаваемые вопросы</a>
                         </li>
                     </ul>
                 </div>
                 <!-- Contact us in Footer -->
                 <div>
                     <!-- Title -->
-                    <p class="text-[13px] font-medium text-white/70">CONTACT & INFORMATION</p>
+                    <p class="text-[13px] font-medium text-white/70">КОНТАКТЫ И ИНФОРМАЦИЯ</p>
                     <!-- Contact info List -->
                     <div class="flex flex-col gap-y-4 mt-6">
                         <!-- Contact info item -->
                         <div class="flex items-center gap-x-4">
                             <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/phone-white-icon.png" alt="phone-icon">
+                            <img class="h-14 w-14" src="./assets/images/phone-white-icon.png" alt="иконка телефона">
                             <!-- info contents -->
                             <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Phone Number</p>
+                                <p class="text-[14px] font-medium text-white/70 mb-1">Номер телефона</p>
                                 <p class="font-bold">01234567890</p>
                             </div>
                         </div>
                         <!-- Contact info item -->
                         <div class="flex items-center gap-x-4">
                             <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/clock-icon.png" alt="clock-icon">
+                            <img class="h-14 w-14" src="./assets/images/clock-icon.png" alt="иконка часов">
                             <!-- info contents -->
                             <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Open Hour</p>
-                                <p class="font-bold">09:00 AM - 18:00 PM</p>
+                                <p class="text-[14px] font-medium text-white/70 mb-1">Часы работы</p>
+                                <p class="font-bold">09:00 - 18:00</p>
                             </div>
                         </div>
                         <!-- Contact info item -->
                         <div class="flex items-center gap-x-4">
                             <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/location-icon.png" alt="location-icon">
+                            <img class="h-14 w-14" src="./assets/images/location-icon.png" alt="иконка местоположения">
                             <!-- info contents -->
                             <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Clinic Address</p>
-                                <p class="font-bold">Place to write an address</p>
+                                <p class="text-[14px] font-medium text-white/70 mb-1">Адрес клиники</p>
+                                <p class="font-bold">Укажите здесь ваш адрес</p>
                             </div>
                         </div>
                     </div>

@@ -135,6 +135,8 @@ sections.forEach(function(param) {
 // <a> Element PreventDefault
 aElement.forEach(function(item){
     item.addEventListener("click", function(e){
-        e.preventDefault();
+        if (item.getAttribute("href") === "#") {
+            e.preventDefault();
+        }
     });
 });
