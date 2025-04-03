@@ -72,12 +72,15 @@
         <span class="preload"></span>
     </div>
     <!-- Header -->
-    <header class="h-[100px]">
+    <header class="h-[100px] bg-white border-b border-gray-100">
         <div class="container flex items-center h-full">
             <div class="flex justify-between items-center h-12 w-full">
                 <!-- Header Logo -->
-                <a href="https://2awebdeveloper.github.io/dentalist/">
-                    <img src="./assets/images/logo.svg" alt="Site-Logo">
+                <a href="https://2awebdeveloper.github.io/dentalist/" class="flex items-center gap-x-6">
+                    <div style="width: 45px; height: 45px; background: #583FBC;" class="bg-[#583FBC] rounded-xl flex items-center justify-center">
+                        <img src="./assets/images/logo.png" alt="Site-Logo" style="width: 25px; height: 25px;" class="object-contain">
+                    </div>
+                    <span class="text-slate-800 font-bold text-sm">КЛИНИКА ДОКТОРА БОШАНОВА</span>
                 </a>
                 <!-- Header Menu -->
                 <nav class="hidden lg:block">
@@ -89,6 +92,9 @@
                             <a href="#services">Услуги</a>
                         </li>
                         <li>
+                            <a href="#promotions">Акции и скидки</a>
+                        </li>
+                        <li>
                             <a href="#about">О нас</a>
                         </li>
                         <li>
@@ -96,8 +102,25 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- Contact Info -->
+                <div class="hidden lg:flex items-center gap-x-8 text-sm ml-auto">
+                    <!-- Addresses Column -->
+                    <div class="flex flex-col gap-y-1">
+                        <span class="text-slate-800 font-bold">Улица Шарль де Голль, 3а</span>
+                        <span class="text-slate-800 font-bold">Улица Мухтара Ауэзова, 26</span>
+                        <span class="text-slate-800 font-bold">Проспект Тауелсиздик, 23/1</span>
+                        <span class="text-slate-800 font-bold">Улица Шарль де Голль, 3а</span>
+                    </div>
+                    <!-- Phone Numbers Column -->
+                    <div class="flex flex-col gap-y-1">
+                        <a href="tel:+77005555010" class="text-primary font-bold">+7 700 555 50 10</a>
+                        <a href="tel:+77011113255" class="text-primary font-bold">+7 701 111 32 55</a>
+                        <a href="tel:+77775254020" class="text-primary font-bold">+7 777 525 40 20</a>
+                        <a href="tel:+77780203232" class="text-primary font-bold">+7 778 020 32 32</a>
+                    </div>
+                </div>
                 <!-- Header Button -->
-                <a class="hidden lg:block h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на прием</a>
+                <a class="hidden lg:block h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#contacts">Записаться на прием</a>
                 <!-- Mobile Menu -->
                 <div class="lg:hidden relative">
                     <!-- Mobile Menu Toggle Icon -->
@@ -144,6 +167,15 @@
                                 </li>
                                 <!-- menu item -->
                                 <li>
+                                    <a class="flex items-center gap-x-1" href="#promotions">
+                                        <svg class="w-5 h-5">
+                                            <use href="#shop"></use>
+                                        </svg>
+                                        Акции и скидки
+                                    </a>
+                                </li>
+                                <!-- menu item -->
+                                <li>
                                     <a class="flex items-center gap-x-1" href="#">
                                         <svg class="w-5 h-5">
                                             <use href="#users"></use>
@@ -164,7 +196,7 @@
                         </nav>
                         <!-- Button -->
                         <div class="p-4">
-                            <a class="block w-full h-12 leading-[2.8rem] bg-primary text-white text-sm font-bold text-center rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
+                            <a class="block w-full h-12 leading-[2.8rem] bg-primary text-white text-base font-bold text-center rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +214,7 @@
                             Доверьте свою улыбку профессионалам
                         </h1>
                         <p class="text-slate-800/70 font-medium text-base lg:text-lg w-[90%]">Современное оборудование, индивидуальный подход и высокий уровень мастерства — всё для вашего комфорта и здоровья зубов!</p>
-                        <a class="h-12 w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на прием</a>
+                        <a class="h-12 w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#contacts">Записаться на прием</a>
                     </div>
                     <div class="lg:w-1/2 mt-auto">
                         <img class="" src="./assets/images/top-main.png" alt="">
@@ -204,49 +236,340 @@
                             <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Качественная забота о вашей улыбке</p>
                         </div>
                     </div>
-                    <!-- Services -->
+                    <!-- Services Grid -->
                     <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Съёмные протезы</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Качественные и комфортные протезы от опытных специалистов для вашей уверенной улыбки.</p>
+                                <h3 class="text-slate-800 font-bold">Лечение зубов</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Профессиональное лечение зубов с использованием современных технологий и материалов.</p>
                             </div>
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Имплантаты</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Надёжные зубные имплантаты от профессионалов для восстановления вашей улыбки.</p>
+                                <h3 class="text-slate-800 font-bold">Удаление зубов</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Безболезненное удаление зубов с использованием современных методов анестезии.</p>
                             </div>
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/whiting.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Отбеливание</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Безопасное и эффективное отбеливание зубов для сияющей улыбки.</p>
+                                <h3 class="text-slate-800 font-bold">Брекеты Элайнеры</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Современные методы исправления прикуса с помощью брекетов и элайнеров.</p>
                             </div>
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
                             <img class="w-full rounded-[32px]" src="./assets/images/rootcanal.webp" alt="">
                             <div class="text-center space-y-2">
-                                <h3 class="text-slate-800 font-bold">Лечение каналов</h3>
-                                <p class="text-[15px] font-medium text-slate-800/50">Точное и безболезненное лечение корневых каналов опытными стоматологами.</p>
+                                <h3 class="text-slate-800 font-bold">Имплантация</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка зубных имплантатов с пожизненной гарантией и использованием передовых технологий.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Протезирование</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Изготовление и установка качественных зубных протезов различных типов.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Виниры</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка керамических виниров для создания идеальной улыбки.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/whiting.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Лечение десен</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Профессиональное лечение заболеваний десен и пародонта.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/rootcanal.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Детская стоматология</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Специализированное лечение зубов у детей в комфортной атмосфере.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Гнатолог</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Диагностика и лечение заболеваний височно-нижнечелюстного сустава.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Лечение под наркозом</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Комфортное лечение зубов под общим наркозом для пациентов с дентофобией.</p>
+                            </div>
+                        </div>
+                        <!-- Service item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/whiting.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Лечение под микроскопом</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Точная диагностика и лечение с использованием современного микроскопа.</p>
                             </div>
                         </div>
                     </div>
                     <!-- More Service Call to Action Button -->
                     <div class="services-more transition-all">
-                        <a href="#" class="w-max mx-auto flex items-center gap-x-1 p-3 rounded-xl text-sm font-bold text-primary bg-primary/10 transition-colors hover:bg-primary/20">
+                        <a href="#" class="w-44 mx-auto flex items-center gap-x-1 p-3 rounded-xl text-sm font-bold text-primary bg-primary/10 transition-colors hover:bg-primary/20">
                             Просмотреть весь список услуг
                             <svg class="w-5 h-5">
                                 <use href="#arrow-right-circle"></use>
                             </svg>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implant Options Section -->
+        <section class="section mb-32" id="implants">
+            <div class="container">
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Implant info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">ИМПЛАНТАЦИЯ</h3>
+                            <!-- Subtitle -->
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Современные методы имплантации</p>
+                        </div>
+                    </div>
+                    <!-- Implant Options Grid -->
+                    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
+                        <!-- Implant item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Импланты Strauman</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Швейцарские импланты премиум-класса с пожизненной гарантией.</p>
+                            </div>
+                        </div>
+                        <!-- Implant item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">All-on-4</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Восстановление всех зубов на 4 имплантах за один день.</p>
+                            </div>
+                        </div>
+                        <!-- Implant item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">All-on-6</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка протеза на 6 имплантах для максимальной стабильности.</p>
+                            </div>
+                        </div>
+                        <!-- Implant item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Одномоментная имплантация</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка импланта сразу после удаления зуба.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prosthetics Options Section -->
+        <section class="section mb-32" id="prosthetics">
+            <div class="container">
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Prosthetics info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">ПРОТЕЗИРОВАНИЕ</h3>
+                            <!-- Subtitle -->
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Современные методы протезирования</p>
+                        </div>
+                    </div>
+                    <!-- Prosthetics Options Grid -->
+                    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Коронки на зубы</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка коронок из различных материалов для восстановления зубов.</p>
+                            </div>
+                        </div>
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Коронки на импланты</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка коронок на имплантаты для полного восстановления зубов.</p>
+                            </div>
+                        </div>
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Бюгельные протезы</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Съемные протезы с металлическим каркасом для надежной фиксации.</p>
+                            </div>
+                        </div>
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Пластиночные протезы</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Съемные протезы из акрила для восстановления зубного ряда.</p>
+                            </div>
+                        </div>
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Мостовидные протезы</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Несъемные протезы для восстановления нескольких зубов подряд.</p>
+                            </div>
+                        </div>
+                        <!-- Prosthetic item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Вкладки для зубов</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Микропротезирование для восстановления частично разрушенных зубов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section class="section mb-32" id="doctors">
+            <div class="container">
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Doctors info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">НАШИ ВРАЧИ</h3>
+                            <!-- Subtitle -->
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Профессионалы с многолетним опытом</p>
+                        </div>
+                    </div>
+                    <!-- Doctors Grid -->
+                    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
+                        <!-- Doctor item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="w-full h-48 rounded-[32px] bg-primary/10 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Александр Петров</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Главный врач, стоматолог-терапевт</p>
+                            </div>
+                        </div>
+                        <!-- Doctor item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="w-full h-48 rounded-[32px] bg-primary/10 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Елена Смирнова</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Стоматолог-ортодонт</p>
+                            </div>
+                        </div>
+                        <!-- Doctor item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="w-full h-48 rounded-[32px] bg-primary/10 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Дмитрий Иванов</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Стоматолог-хирург</p>
+                            </div>
+                        </div>
+                        <!-- Doctor item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="w-full h-48 rounded-[32px] bg-primary/10 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Мария Сидорова</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Стоматолог-ортопед</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section class="section mb-32" id="promotions">
+            <div class="container">
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Promotions info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">АКЦИИ И СКИДКИ</h3>
+                            <!-- Subtitle -->
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Выгодные предложения для вашей улыбки</p>
+                        </div>
+                    </div>
+                    <!-- Promotions -->
+                    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
+                        <!-- Promotion item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/whiting.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Скидка 20% на отбеливание</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Профессиональное отбеливание зубов со скидкой 20% до конца месяца!</p>
+                                <div class="text-primary font-bold">До 30 апреля</div>
+                            </div>
+                        </div>
+                        <!-- Promotion item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/implants.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Имплантация со скидкой 15%</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Установка имплантатов с пожизненной гарантией и скидкой 15%.</p>
+                                <div class="text-primary font-bold">До 31 мая</div>
+                            </div>
+                        </div>
+                        <!-- Promotion item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <img class="w-full rounded-[32px]" src="./assets/images/dentures.webp" alt="">
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Скидка 25% на протезирование</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Современное протезирование зубов со скидкой 25% для новых пациентов.</p>
+                                <div class="text-primary font-bold">До 30 июня</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,7 +593,7 @@
                         <!-- Description -->
                         <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Круглосуточная экстренная помощь от профессиональных стоматологов с использованием современного оборудования для вашего комфорта и здоровья.</p>
                         <!-- Button Call to Action -->
-                        <a class="h-12 w-44 mx-auto bg-primary text-white text-sm font-bold text-center leading-[3rem] mt-6 lg:mt-8 lg:mx-0 rounded-xl transition-colors hover:bg-indigo-800" href="#call">Записаться на приём</a>
+                        <a class="h-12 w-44 mx-auto bg-primary text-white text-sm font-bold text-center leading-[3rem] mt-6 lg:mt-8 lg:mx-0 rounded-xl transition-colors hover:bg-indigo-800" href="#contacts">Записаться на приём</a>
                     </div>
                 </div>
             </div>
@@ -307,19 +630,7 @@
                             </div>
                         </div>
                         <!-- Feature item -->
-                        <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
-                            <!-- Feature image -->
-                            <div class="w-16 h-16 shrink-0">
-                                <img src="./assets/images/Insurance-accepted.png" alt="Принимаем страховку">
-                            </div>
-                            <!-- Feature Content -->
-                            <div class="text-center xs:text-start sm:text-center lg:text-start">
-                                <!-- Feature item title -->
-                                <p class="text-slate-800 font-bold mb-1">Принимаем страховку</p>
-                                <!-- Feature item Description -->
-                                <p class="text-sm font-medium text-slate-800/50">Удобная оплата через страховые программы для вашего комфорта.</p>
-                            </div>
-                        </div>
+
                         <!-- Feature item -->
                         <div class="flex items-center flex-col xs:flex-row sm:flex-col lg:flex-row gap-4">
                             <!-- Feature image -->
@@ -395,6 +706,48 @@
             </div>
         </section>
 
+        <!-- Pricing Section -->
+        <section class="section py-16" id="pricing">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row items-center gap-x-20 gap-y-12">
+                    <!-- Pricing Contents -->
+                    <div class="flex flex-col gap-y-4 text-center lg:text-start">
+                        <!-- Title -->
+                        <h4 class="text-sm text-primary font-bold">СТОИМОСТЬ УСЛУГ</h4>
+                        <!-- Subtitle -->
+                        <p class="text-slate-800 text-4xl leading-snug font-bold sm:max-w-screen-sm">Прозрачные цены на все услуги</p>
+                        <!-- Description -->
+                        <p class="max-w-lg lg:max-w-md mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Мы предлагаем конкурентоспособные цены на все виды стоматологических услуг с возможностью оплаты в рассрочку.</p>
+                        <div class="flex flex-col gap-y-2 child:text-[#181945] child:text-[15px] child:font-medium mt-4">
+                            <p class="flex items-center gap-x-2">
+                                <svg class="w-5 h-5 text-primary">
+                                    <use href="#check-circle"></use>
+                                </svg>
+                                Гибкая система скидок
+                            </p>
+                            <p class="flex items-center gap-x-2">
+                                <svg class="w-5 h-5 text-primary">
+                                    <use href="#check-circle"></use>
+                                </svg>
+                                Возможность оплаты в рассрочку
+                            </p>
+                            <p class="flex items-center gap-x-2">
+                                <svg class="w-5 h-5 text-primary">
+                                    <use href="#check-circle"></use>
+                                </svg>
+                                Прозрачное ценообразование
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Pricing image -->
+                    <div class="flex order-first lg:order-last">
+                        <img class="hidden lg:block" src="./assets/images/pricing-desktop.webp" alt="стоимость услуг десктоп">
+                        <img class="lg:hidden" src="./assets/images/pricing-mobile.webp" alt="стоимость услуг мобильная">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- TESTIMONIAL Section  -->
         <section class="section py-16" id="about">
             <div class="container">
@@ -418,73 +771,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-1.webp" alt="аватар пользователя 1">
+<!--                                    <img src="./assets/images/user-avatar-1.webp" alt="аватар пользователя 1">-->
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Роберт Фокс</p>
+                                    <p class="font-bold text-slate-800 mb-2">Майра Тулеуова</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Отличный сервис и профессиональные врачи, которые сделали мою улыбку идеальной!</p>
-                                    <div class="flex items-center justify-center mt-6">
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-400/90">
-                                            <use href="#star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TESTIMONIAL item -->
-                            <div class="swiper-slide relative bg-white rounded-3xl p-8">
-                                <!-- User Avatar image -->
-                                <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-2.webp" alt="аватар пользователя 2">
-                                </div>
-                                <div class="text-center mt-8">
-                                    <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Альберт Флорес</p>
-                                    <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Быстрое и безболезненное лечение, я доволен результатом и отношением персонала.</p>
-                                    <div class="flex items-center justify-center mt-6">
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-orange-star">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-400/90">
-                                            <use href="#star"></use>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-400/90">
-                                            <use href="#star"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- TESTIMONIAL item -->
-                            <div class="swiper-slide relative bg-white rounded-3xl p-8">
-                                <!-- User Avatar image -->
-                                <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-3.webp" alt="аватар пользователя 3">
-                                </div>
-                                <div class="text-center mt-8">
-                                    <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Бесси Купер</p>
-                                    <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Лучшая стоматология! Профессионализм и забота на высшем уровне.</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Очень хорошие стоматологи, только здесь можно сделать импланты с гарантией, во время сообщают о посещении!👍</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -508,13 +801,13 @@
                             <div class="swiper-slide relative bg-white rounded-3xl p-8">
                                 <!-- User Avatar image -->
                                 <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
-                                    <img src="./assets/images/user-avatar-4.webp" alt="аватар пользователя 4">
+<!--                                    <img src="./assets/images/user-avatar-2.webp" alt="аватар пользователя 2">-->
                                 </div>
                                 <div class="text-center mt-8">
                                     <!-- User Name -->
-                                    <p class="font-bold text-slate-800 mb-2">Дэвид Мартин</p>
+                                    <p class="font-bold text-slate-800 mb-2">Сауле Матайева</p>
                                     <!-- User Comment -->
-                                    <p class="text-[15px] font-medium text-slate-800/70">Комфортная атмосфера и качественное лечение, рекомендую всем!</p>
+                                    <p class="text-[15px] font-medium text-slate-800/70">Благодарна клинике доктора Бошанова, врачу Арман Амановичу! За красивые зубы! Хорошее обслуживание! Благодарю всю команду за работу!</p>
                                     <div class="flex items-center justify-center mt-6">
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
@@ -528,92 +821,198 @@
                                         <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
                                         </svg>
-                                        <svg class="w-5 h-5 text-gray-400/90">
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TESTIMONIAL item -->
+                            <div class="swiper-slide relative bg-white rounded-3xl p-8">
+                                <!-- User Avatar image -->
+                                <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
+<!--                                    <img src="./assets/images/user-avatar-3.webp" alt="аватар пользователя 3">-->
+                                </div>
+                                <div class="text-center mt-8">
+                                    <!-- User Name -->
+                                    <p class="font-bold text-slate-800 mb-2">Улбосын</p>
+                                    <!-- User Comment -->
+                                    <p class="text-[15px] font-medium text-slate-800/70">Хотела выразить благодарности стоматологу Арман. Замечательный специалист, относится к пациентам с душой. Качественно выполняет свою работу. Я очень довольна лечением и благодарна Арману за его внимательное отношение к клиентам.</p>
+                                    <div class="flex items-center justify-center mt-6">
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TESTIMONIAL item -->
+                            <div class="swiper-slide relative bg-white rounded-3xl p-8">
+                                <!-- User Avatar image -->
+                                <div class="absolute mx-auto w-max left-0 right-0 top-0 translate-y-[-50%] border-8 rounded-full border-[#D9EBFA]">
+<!--                                    <img src="./assets/images/user-avatar-4.webp" alt="аватар пользователя 4">-->
+                                </div>
+                                <div class="text-center mt-8">
+                                    <!-- User Name -->
+                                    <p class="font-bold text-slate-800 mb-2">Сания Азмагамебтова</p>
+                                    <!-- User Comment -->
+                                    <p class="text-[15px] font-medium text-slate-800/70">Очень рекомендую врача Аиду Манарбековну! Знает свое дело и все безболезненно. Все понятно объясняет. Здоровые зубы обеспечены 👍</p>
+                                    <div class="flex items-center justify-center mt-6">
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-5 h-5 text-orange-star">
                                             <use href="#star"></use>
                                         </svg>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination mb-12"></div>
+                        <!-- 2GIS Reviews Button -->
+                        <div class="flex justify-center mt-8">
+
+
+                            <a class="h-12 w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="https://2gis.kz/almaty/firm/70000001000000000" target="_blank">Смотреть все отзывы</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact us Section -->
-        <section class="section py-16">
+        <!-- Contacts Section -->
+        <section class="section mb-32" id="contacts">
             <div class="container">
-                <div class="flex flex-col lg:flex-row gap-y-6 gap-x-20">
-                    <!-- Map image -->
-                    <div class="relative lg:w-1/2">
-                        <img class="block w-full h-[440px] xs:h-[500px] lg:h-[610px] xl:h-[680px] object-cover rounded-3xl" src="./assets/images/map-image.webp" alt="карта">
-                        <!-- Absolute Address -->
-                        <div class="absolute bg-white p-4 bottom-8 left-8 right-8 rounded-3xl flex gap-x-6 items-center">
-                            <!-- icon -->
-                            <img class="block w-16 h-16" src="./assets/images/home-icon.png" alt="иконка дома">
-                            <!-- Address -->
-                            <div>
-                                <p class="text-xs text-primary font-bold mb-1">АДРЕС</p>
-                                <p class="font-bold text-slate-800 max-w-[260px]">Укажите здесь ваш адрес</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/2 bg-gray-100 px-4 pt-10 pb-4 rounded-3xl lg:bg-transparent lg:p-0 lg:rounded-none" id="call">
-                        <!-- Contact us info -->
-                        <div class="flex flex-col gap-y-4 text-center lg:text-start">
-                            <h4 class="text-sm text-primary font-bold">ЗАПИСЬ НА ПРИЁМ</h4>
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Contacts info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">КОНТАКТЫ</h3>
                             <!-- Subtitle -->
-                            <p class="text-slate-800 text-4xl leading-snug font-bold lg:max-w-screen-sm">Забота в Dentalist — это удовольствие</p>
-                            <!-- Description -->
-                            <p class="mx-auto lg:mx-0 text-[15px] font-medium text-slate-800/70">Получите качественное лечение от профессиональных стоматологов в комфортной обстановке.</p>
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Наши филиалы</p>
+                            </div>
+                        <!-- Add appointment button -->
                         </div>
-                        <!-- Contact us form -->
-                        <form class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-7 mt-10 xl:mt-16">
-                            <!-- name input -->
-                            <div class="flex flex-col gap-y-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="name">ИМЯ</label>
-                                <input class="form-input" id="name" type="text" placeholder="Введите ваше имя..." required>
-                                <svg class="w-6 h-6 absolute bottom-4 left-4 text-slate-400">
-                                    <use href="#user"></use>
-                                </svg>
-                            </div>
-                            <!-- email input -->
-                            <div class="flex flex-col gap-y-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="email">ЭЛЕКТРОННАЯ ПОЧТА</label>
-                                <input class="form-input" id="email" type="email" placeholder="Ваш email..." required>
-                                <svg class="w-6 h-6 absolute bottom-4 left-4 text-slate-400">
-                                    <use href="#envelope"></use>
-                                </svg>
-                            </div>
-                            <!-- messages input -->
-                            <div class="flex flex-col gap-y-2 sm:col-span-2 relative">
-                                <label class="font-bold text-[13px] text-slate-600/90" for="message">СООБЩЕНИЕ</label>
-                                <textarea class="form-input min-h-[234px] max-h-[234px] lg:min-h-[116px] lg:max-h-[116px] xl:min-h-[234px] xl:max-h-[234px]" id="message" placeholder="Введите ваше сообщение..." required></textarea>
-                                <svg class="w-6 h-6 absolute top-[42px] left-4 text-slate-400">
-                                    <use href="#pencil-square"></use>
-                                </svg>
-                            </div>
-                            <div class="flex items-center gap-x-2 mb-4 sm:mb-0">
-                                <input type="checkbox" id="consent" class="w-5 h-5 accent-primary" required>
-                                <label for="consent" class="text-sm text-slate-800/70 cursor-pointer">
-                                    Я согласен(а) с обработкой моих персональных данных
-                                </label>
-                            </div>
-                            <!-- Form submit button -->
-                            <div class="flex items-center justify-between sm:col-span-2">
-                                <!-- Phone number -->
-                                <div class="hidden sm:flex items-center gap-x-4">
-                                    <img class="block w-16 h-16" src="./assets/images/phone-icon.png" alt="иконка телефона">
-                                    <div>
-                                        <p class="text-primary font-bold text-sm">Стоматология 24 часа</p>
-                                        <p class="text-slate-800 font-bold mt-1">01234567890</p>
-                                    </div>
+                    <!-- Contacts Grid -->
+                    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5 child:transition-all child-hover:shadow-2xl mt-6 lg:mt-0 child-hover:shadow-slate-400/20 child-hover:border-gray-100 child:cursor-pointer">
+                        <!-- Contact item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="relative">
+                                <a target="_blank" href="https://go.2gis.com/qbRMh">
+                                    <img class="w-full rounded-[32px]" src="./assets/images/card1.png" alt="Филиал на улице Шарль де Голль">
+                                </a>
+                        </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Филиал №1</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Улица Шарль де Голль, 3а</p>
+                                <a href="tel:+77005555010" class="text-[15px] font-medium text-slate-800/50 block">+7 700 555 50 10</a>
+                                <div class="flex items-center justify-center gap-3">
+                                    <a href="https://wa.me/77005555010?text=Здравствуйте!%20Пишу%20из%20сайта%20fff.kz" target="_blank" class="text-green-500 hover:text-green-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="green" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+                                    </a>
+                                    <a style="margin-left: 15px; margin-right: 15px;" href="https://go.2gis.com/qbRMh" target="_blank" class="text-blue-500 hover:text-blue-600">
+                                        <img src="https://d-assets.2gis.ru/favicon.png" width="32" height="32">
+                                    </a>
+                                    <a href="https://www.instagram.com/boshanov_dental_clinic/" target="_blank" class="hover:opacity-80">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="url(#gradient)" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><defs><linearGradient id="gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFD700"/><stop offset="50%" stop-color="#FF69B4"/><stop offset="100%" stop-color="#FF1493"/></linearGradient></defs></svg>
+                                    </a>
                                 </div>
-                                <!-- Submit button -->
-                                <button type="submit" class="h-12 w-full sm:w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800">Записаться на приём</button>
                             </div>
-                        </form>
+                        </div>
+                        <!-- Contact item -->
+                        <div class="services-item rocard3unded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="relative">
+                                <a target="_blank" href="https://go.2gis.com/BkYby">
+                                    <img class="w-full rounded-[32px]" src="./assets/images/card3.png" alt="Филиал на улице Мухтара Ауэзова">
+                                </a>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Филиал №2</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Улица Мухтара Ауэзова, 26</p>
+                                <a href="tel:+77011113255" class="text-[15px] font-medium text-slate-800/50 block">+7 701 111 32 55</a>
+                                <div class="flex items-center justify-center gap-2">
+                                    <a href="https://wa.me/77011113255?text=Здравствуйте!%20Пишу%20из%20сайта%20fff.kz" target="_blank" class="text-green-500 hover:text-green-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="green" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+                                    </a>
+                                    <a style="margin-left: 15px; margin-right: 15px;" href="https://go.2gis.com/BkYby" target="_blank" class="text-blue-500 hover:text-blue-600">
+                                            <img src="https://d-assets.2gis.ru/favicon.png" width="32" height="32">
+                                    </a>
+                                    <a href="https://www.instagram.com/boshanov_dental_clinic/" target="_blank" class="hover:opacity-80">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="url(#gradient)" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><defs><linearGradient id="gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFD700"/><stop offset="50%" stop-color="#FF69B4"/><stop offset="100%" stop-color="#FF1493"/></linearGradient></defs></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="relative">
+                                <a target="_blank" href="https://go.2gis.com/S3Zsf">
+                                    <img class="w-full rounded-[32px]" src="./assets/images/card2.png" alt="Филиал на проспекте Тауелсиздик">
+                                </a>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Филиал №3</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Проспект Тауелсиздик, 23/1</p>
+                                <a href="tel:+77775254020" class="text-[15px] font-medium text-slate-800/50 block">+7 777 525 40 20</a>
+                                <div class="flex items-center justify-center gap-2">
+                                    <a href="https://wa.me/77775254020?text=Здравствуйте!%20Пишу%20из%20сайта%20fff.kz" target="_blank" class="text-green-500 hover:text-green-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="green" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+                                    </a>
+                                    <a style="margin-left: 15px; margin-right: 15px;" href="https://go.2gis.com/S3Zsf" target="_blank" class="text-blue-500 hover:text-blue-600">
+                                        <img src="https://d-assets.2gis.ru/favicon.png" width="32" height="32">
+                                    </a>
+                                    <a href="https://www.instagram.com/boshanov_dental_clinic/" target="_blank" class="hover:opacity-80">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="url(#gradient)" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><defs><linearGradient id="gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFD700"/><stop offset="50%" stop-color="#FF69B4"/><stop offset="100%" stop-color="#FF1493"/></linearGradient></defs></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact item -->
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
+                            <div class="relative">
+                                <a target="_blank" href="https://go.2gis.com/ozlqS">
+                                    <img class="w-full rounded-[32px]" src="./assets/images/card4.png" alt="Филиал на улице Шарль де Голль">
+                                </a>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <h3 class="text-slate-800 font-bold">Филиал №4</h3>
+                                <p class="text-[15px] font-medium text-slate-800/50">Улица Шарль де Голль, 3а</p>
+                                <a href="tel:+77780203232" class="text-[15px] font-medium text-slate-800/50 block">+7 778 020 32 32</a>
+                                <div class="flex items-center justify-center gap-2">
+                                    <a href="https://wa.me/77780203232?text=Здравствуйте!%20Пишу%20из%20сайта%20fff.kz" target="_blank" class="text-green-500 hover:text-green-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="green" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.287.129.332.202.045.073.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+                                    </a>
+                                    <a style="margin-left: 15px; margin-right: 15px;" href="https://go.2gis.com/ozlqS" target="_blank" class="text-blue-500 hover:text-blue-600">
+                                        <img src="https://d-assets.2gis.ru/favicon.png" width="32" height="32">
+                                    </a>
+                                    <a href="https://www.instagram.com/boshanov_dental_clinic/" target="_blank" class="hover:opacity-80">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="url(#gradient)" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/><defs><linearGradient id="gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFD700"/><stop offset="50%" stop-color="#FF69B4"/><stop offset="100%" stop-color="#FF1493"/></linearGradient></defs></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -622,98 +1021,37 @@
     <!-- Footer -->
     <footer class="bg-[#041434] mt-10">
         <div class="container">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-10 xl:gap-x-20 text-white py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-12 gap-x-10 xl:gap-x-20 text-white py-16">
                 <!-- About me in Footer -->
-                <div class="sm:col-span-2 lg:col-span-1">
+                <div>
                     <!-- Logo -->
-                    <img src="./assets/images/logo-footer.svg" alt="логотип футера">
+                    <div style="width: 45px; height: 45px; background: #583FBC;" class="bg-[#583FBC] rounded-xl flex items-center justify-center">
+                        <img src="./assets/images/logo.png" alt="Site-Logo" style="width: 25px; height: 25px;" class="object-contain">
+                    </div>
                     <!-- Description -->
                     <p class="text-[15px] text-white/70 mt-4">Мы предоставляем высококачественные стоматологические услуги с использованием современных технологий и индивидуального подхода.</p>
                     <!-- Social in footer -->
                     <div class="mt-8">
                         <p class="text-[13px] font-medium text-white/70 mb-4">СЛЕДИТЕ ЗА НАМИ</p>
                         <!-- Socials -->
-                        <div class="flex items-center gap-x-4 child:transition-colors child:bg-white/90 child-hover:bg-white child:p-2 child:rounded-lg">
-                            <!-- Social item -->
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1e293b" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
-                            </a>
-                            <!-- Social item -->
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1e293b" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/></svg>
-                            </a>
-                            <!-- Social item -->
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#1e293b" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
+                        <div class="flex items-center gap-x-4">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/boshanov_dental_clinic/" target="_blank" class="bg-white/90 p-2 rounded-lg hover:bg-white transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Quick Access in Footer -->
+                <!-- Navigation Links -->
                 <div>
-                    <!-- Title -->
-                    <p class="text-[13px] font-medium text-white/70 mb-6">БЫСТРЫЕ ССЫЛКИ</p>
-                    <!-- Quick Access List -->
+                    <p class="text-[13px] font-medium text-white/70 mb-6">НАВИГАЦИЯ</p>
                     <ul class="flex flex-col gap-y-4 text-[15px]">
-                        <!-- Quick Access item -->
-                        <li>
-                            <a class="quick-access-item" href="#">О нас</a>
-                        </li>
-                        <!-- Quick Access item -->
-                        <li>
-                            <a class="quick-access-item" href="#">Стоматологические услуги</a>
-                        </li>
-                        <!-- Quick Access item -->
-                        <li>
-                            <a class="quick-access-item" href="#">Стоматологи</a>
-                        </li>
-                        <!-- Quick Access item -->
-                        <li>
-                            <a class="quick-access-item" href="#">Блог</a>
-                        </li>
-                        <!-- Quick Access item -->
-                        <li>
-                            <a class="quick-access-item" href="#">Часто задаваемые вопросы</a>
-                        </li>
+                        <li><a class="quick-access-item" href="#home">Главная</a></li>
+                        <li><a class="quick-access-item" href="#services">Услуги</a></li>
+                        <li><a class="quick-access-item" href="#promotions">Акции и скидки</a></li>
+                        <li><a class="quick-access-item" href="#about">О нас</a></li>
+                        <li><a class="quick-access-item" href="#call">Связаться с нами</a></li>
                     </ul>
-                </div>
-                <!-- Contact us in Footer -->
-                <div>
-                    <!-- Title -->
-                    <p class="text-[13px] font-medium text-white/70">КОНТАКТЫ И ИНФОРМАЦИЯ</p>
-                    <!-- Contact info List -->
-                    <div class="flex flex-col gap-y-4 mt-6">
-                        <!-- Contact info item -->
-                        <div class="flex items-center gap-x-4">
-                            <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/phone-white-icon.png" alt="иконка телефона">
-                            <!-- info contents -->
-                            <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Номер телефона</p>
-                                <p class="font-bold">01234567890</p>
-                            </div>
-                        </div>
-                        <!-- Contact info item -->
-                        <div class="flex items-center gap-x-4">
-                            <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/clock-icon.png" alt="иконка часов">
-                            <!-- info contents -->
-                            <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Часы работы</p>
-                                <p class="font-bold">09:00 - 18:00</p>
-                            </div>
-                        </div>
-                        <!-- Contact info item -->
-                        <div class="flex items-center gap-x-4">
-                            <!-- info icon -->
-                            <img class="h-14 w-14" src="./assets/images/location-icon.png" alt="иконка местоположения">
-                            <!-- info contents -->
-                            <div>
-                                <p class="text-[14px] font-medium text-white/70 mb-1">Адрес клиники</p>
-                                <p class="font-bold">Укажите здесь ваш адрес</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
