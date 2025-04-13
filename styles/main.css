@@ -952,6 +952,10 @@ body{
   margin-top: auto;
 }
 
+.h-280 {
+  height: 280px;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
