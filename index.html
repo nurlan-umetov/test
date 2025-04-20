@@ -77,10 +77,12 @@
         <div class="container flex items-center h-full">
             <div class="flex justify-between items-center h-12 w-full">
                 <!-- Header Logo -->
-                <a href="https://2awebdeveloper.github.io/dentalist/" class="flex items-center gap-x-6">
-                    <div style="width: 45px; height: 45px; background: #583FBC;" class="bg-[#583FBC] rounded-xl flex items-center justify-center">
-                        <img src="./assets/images/logo.png" alt="Site-Logo" style="width: 25px; height: 25px;" class="object-contain">
-                    </div>
+                <a href="boshanov-dental-clinic.kz" class="flex items-center gap-x-6">
+<!--                    <div style="width: 45px; height: 45px; background: #583FBC;" class="bg-[#583FBC] rounded-xl flex items-center justify-center">-->
+<!--                        <img src="./assets/images/logo.png" alt="Site-Logo" style="width: 25px; height: 25px;" class="object-contain">-->
+<!--                    </div>-->
+                    <img src="./assets/images/logo.png" alt="Site-Logo" style="width: 40px; height: 40px; border-radius: 10px;" class="object-contain">
+
                     <span class="text-slate-800 font-bold text-sm">КЛИНИКА ДОКТОРА БОШАНОВА</span>
                 </a>
                 <!-- Header Menu -->
@@ -94,6 +96,9 @@
                         </li>
                         <li>
                             <a href="#promotions">Акции и скидки</a>
+                        </li>
+                        <li>
+                            <a href="#contracts">Договоры</a>
                         </li>
                         <li>
                             <a href="#about">О нас</a>
@@ -123,7 +128,7 @@
                 <!-- Header Button -->
                 <a class="hidden lg:block h-full w-44 bg-primary text-white text-sm font-bold text-center leading-[3rem] rounded-xl transition-colors hover:bg-indigo-800" href="#contacts">Записаться на прием</a>
                 <!-- Mobile Menu -->
-                <div class="lg:hidden relative">
+                <div class="lg:hidden relative" style="justify-content: flex-end;">
                     <!-- Mobile Menu Toggle Icon -->
                     <button id="mobile-menu-toggle" type="button">
                         <svg class="w-8 h-8">
@@ -179,7 +184,7 @@
                                 </li>
                                 <!-- menu item -->
                                 <li>
-                                    <a class="flex items-center gap-x-1" href="#">
+                                    <a class="flex items-center gap-x-1" href="#about">
                                         <svg class="w-5 h-5">
                                             <use href="#users"></use>
                                         </svg>
@@ -188,7 +193,7 @@
                                 </li>
                                 <!-- menu item -->
                                 <li>
-                                    <a class="flex items-center gap-x-1" href="#call">
+                                    <a class="flex items-center gap-x-1" href="#contacts">
                                         <svg class="w-5 h-5">
                                             <use href="#envelope"></use>
                                         </svg>
@@ -199,7 +204,7 @@
                         </nav>
                         <!-- Button -->
                         <div class="p-4">
-                            <a class="block w-full h-12 leading-[2.8rem] bg-primary text-white text-base font-bold text-center rounded-xl transition-colors hover:bg-indigo-800" href="#">Book appointment</a>
+                            <a class="block w-full h-12 leading-[2.8rem] bg-primary text-white text-base font-bold text-center rounded-xl transition-colors hover:bg-indigo-800" href="#contacts">Записаться на прием</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +229,7 @@
                             <img style="max-height: 600px;" src="./assets/images/top-main.png" alt="Доктор Есентай Бошанов">
                             <div class="doctor-overlay">
                                 <h2 class="doctor-name">Доктор: Есентай Бошанов</h2>
-                                <p class="doctor-titlФилиал №4e">Главный врач клиники</p>
+                                <p class="doctor-title">Главный врач клиники</p>
                                 <p class="doctor-description">Специалист с многолетним опытом в стоматологии</p>
                             </div>
                         </div>
@@ -233,6 +238,334 @@
             </div>
         </section>
         
+        <!-- Video Section -->
+        <section class="section" id="videos">
+            <div class="container">
+                <div class="flex flex-col gap-14 lg:gap-y-16 xl:gap-y-20">
+                    <!-- Video section info contents -->
+                    <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                        <div class="text-center lg:text-start">
+                            <!-- Title -->
+                            <h3 class="text-sm text-primary font-bold mb-3">НАША КЛИНИКА</h3>
+                            <!-- Subtitle -->
+                            <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Современная стоматология для вашей улыбки</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col lg:flex-row gap-8">
+                        <!-- Video Carousel -->
+                        <div class="lg:w-1/2">
+                            <div class="swiper video-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Video 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="relative rounded-3xl overflow-hidden">
+                                            <video class="w-full h-[400px] object-cover" autoplay muted loop>
+                                                <source src="./assets/videos/clinic1.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white">
+                                                <h3 class="text-xl font-bold mb-2">Современное оборудование</h3>
+                                                <p class="text-sm">Используем передовые технологии для вашего комфорта</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Video 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="relative rounded-3xl overflow-hidden">
+                                            <video class="w-full h-[400px] object-cover" autoplay muted loop>
+                                                <source src="./assets/videos/clinic2.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white">
+                                                <h3 class="text-xl font-bold mb-2">Профессиональная команда</h3>
+                                                <p class="text-sm">Опытные специалисты с многолетним стажем</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Video 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="relative rounded-3xl overflow-hidden">
+                                            <video class="w-full h-[400px] object-cover" autoplay muted loop>
+                                                <source src="./assets/videos/clinic3.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white">
+                                                <h3 class="text-xl font-bold mb-2">Комфортная атмосфера</h3>
+                                                <p class="text-sm">Создаем уютную обстановку для вашего спокойствия</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Video 4 -->
+                                    <div class="swiper-slide">
+                                        <div class="relative rounded-3xl overflow-hidden">
+                                            <video class="w-full h-[400px] object-cover" autoplay muted loop>
+                                                <source src="./assets/videos/clinic4.mp4" type="video/mp4">
+                                            </video>
+                                            <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-6 text-white">
+                                                <h3 class="text-xl font-bold mb-2">Индивидуальный подход</h3>
+                                                <p class="text-sm">Персональный план лечения для каждого пациента</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <!-- Clinic Information -->
+                        <div class="hidden lg:block lg:w-1/2">
+                            <div class="grid grid-cols-1 gap-6">
+                                <!-- Clinic 1 -->
+                                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow mb-24">
+                                    <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал №1</h3>
+                                    <p class="text-slate-800/70 mb-2">Улица Шарль де Голль, 3а</p>
+                                    <a href="tel:+77005555010" class="text-primary font-bold block mb-2">+7 700 555 50 10</a>
+                                    <a href="https://go.2gis.com/qbRMh" target="_blank" class="text-primary hover:underline block mb-4">Посмотреть на карте</a>
+                                    <a href="https://wa.me/77005555010?text=Здравствуйте!%20Хочу%20записаться%20на%20прием" target="_blank" class="appointment-button w-full text-center">
+                                        Записаться на прием
+                                    </a>
+                                </div>
+
+                                <!-- Clinic 2 -->
+                                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow mb-24">
+                                    <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал №2</h3>
+                                    <p class="text-slate-800/70 mb-2">Улица Мухтара Ауэзова, 26</p>
+                                    <a href="tel:+77011113255" class="text-primary font-bold block mb-2">+7 701 111 32 55</a>
+                                    <a href="https://go.2gis.com/qbRMh" target="_blank" class="text-primary hover:underline block mb-4">Посмотреть на карте</a>
+                                    <a href="https://wa.me/77011113255?text=Здравствуйте!%20Хочу%20записаться%20на%20прием" target="_blank" class="appointment-button w-full text-center">
+                                        Записаться на прием
+                                    </a>
+                                </div>
+
+                                <!-- Clinic 3 -->
+                                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow mb-24">
+                                    <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал №3</h3>
+                                    <p class="text-slate-800/70 mb-2">Проспект Тауелсиздик, 23/1</p>
+                                    <a href="tel:+77775254020" class="text-primary font-bold block mb-2">+7 777 525 40 20</a>
+                                    <a href="https://go.2gis.com/qbRMh" target="_blank" class="text-primary hover:underline block mb-4">Посмотреть на карте</a>
+                                    <a href="https://wa.me/77775254020?text=Здравствуйте!%20Хочу%20записаться%20на%20прием" target="_blank" class="appointment-button w-full text-center">
+                                        Записаться на прием
+                                    </a>
+                                </div>
+
+                                <!-- Clinic 4 -->
+                                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                                    <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал №4 (Детский)</h3>
+                                    <p class="text-slate-800/70 mb-2">Улица Шарль де Голль, 3а</p>
+                                    <a href="tel:+77780203232" class="text-primary font-bold block mb-2">+7 778 020 32 32</a>
+                                    <a href="https://go.2gis.com/qbRMh" target="_blank" class="text-primary hover:underline block mb-4">Посмотреть на карте</a>
+                                    <a href="https://wa.me/77780203232?text=Здравствуйте!%20Хочу%20записаться%20на%20прием" target="_blank" class="appointment-button w-full text-center">
+                                        Записаться на прием
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contracts Section -->
+        <section id="contracts" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="services-contents flex flex-col items-center justify-center lg:flex-row lg:justify-between lg:items-center gap-y-4 transition-all">
+                    <div class="text-center lg:text-start">
+                        <!-- Subtitle -->
+                        <p class="text-slate-800 text-3xl xs:text-4xl lg:max-w-[340px] leading-snug xs:leading-snug font-bold">Договоры</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Тауелсиздик -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал Тауелсиздик</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="./assets/Договоры/Договора Тауелсиздик/Договор общий Тауелсиздик.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Основной договор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Тауелсиздик/Договор на платные услуги.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на платные услуги
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Тауелсиздик/Договор на синус лифтинг Тауелсиздик.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на синус-лифтинг
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Тауелсиздик/Договор на ортодонтию.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на ортодонтию
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Тауелсиздик/Заявление о присоединении.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Заявление о присоединении
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Ауезова -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал Ауезова</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="./assets/Договоры/Договора Ауезова/Договор основной Ауезова.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Основной договор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Ауезова/Договор на платные услуги Ауезова.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на платные услуги
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Ауезова/Договор на синус лифтинг Ауезова.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на синус-лифтинг
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Ауезова/Договор на ортодонтию Ауезова.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на ортодонтию
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Ауезова/Заявление Ауезова.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Заявление о присоединении
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Шарль -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">Филиал Шарль де Голль</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="./assets/Договоры/Договора Шарль/ОСновной Дог Шарль.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Основной договор
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Шарль/Дог на платные услуги.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на платные услуги
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Шарль/Договор на синус-лифтинг.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на синус-лифтинг
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Шарль/Договор на ортодонтию.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Договор на ортодонтию
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./assets/Договоры/Договора Шарль/Заявление Ш.pdf" 
+                                   class="text-primary hover:text-blue-800 flex items-center"
+                                   target="_blank">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                    </svg>
+                                    Заявление о присоединении
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Services Section -->
         <section class="section mb-32" id="services">
             <div class="container">
@@ -282,7 +615,7 @@
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
-                            <img class="h-280 rounded-[32px]" src="./assets/images/protez.jpg" alt="">
+                            <img class="h-280 rounded-[32px]" src="./assets/images/protez.JPG" alt="">
                             <div class="text-center space-y-2">
                                 <h3 class="text-slate-800 font-bold">Протезирование</h3>
                                 <p class="text-[15px] font-medium text-slate-800/50">Изготовление и установка качественных зубных протезов различных типов.</p>
@@ -298,15 +631,19 @@
                         </div>
                         <!-- Service item -->
                         <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
-                            <img class="h-280 rounded-[32px]" src="./assets/images/typodont.png" alt="">
+                            <div class="h-280 rounded-[32px]" style="background: black;">
+                                <img class="h-280 rounded-[32px]" style="object-fit: contain;" src="./assets/images/typodont.JPG" alt="">
+                            </div>
                             <div class="text-center space-y-2">
                                 <h3 class="text-slate-800 font-bold">Лечение десен</h3>
                                 <p class="text-[15px] font-medium text-slate-800/50">Профессиональное лечение заболеваний десен и пародонта.</p>
                             </div>
                         </div>
                         <!-- Service item -->
-                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4">
-                            <img class="h-280 rounded-[32px]" src="./assets/images/child.png" alt="">
+                        <div class="services-item rounded-[32px] border p-4 flex flex-col gap-y-4" style="display: flex;align-items: flex-end;justify-content: center;">
+                            <div class="h-280 rounded-[32px]" style="background: #feae2d;">
+                                <img class="h-280 rounded-[32px]" style="object-fit: contain;" src="./assets/images/child.JPG" alt="">
+                            </div>
                             <div class="text-center space-y-2">
                                 <h3 class="text-slate-800 font-bold">Детская стоматология</h3>
                                 <p class="text-[15px] font-medium text-slate-800/50">Специализированное лечение зубов у детей в комфортной атмосфере.</p>
@@ -562,8 +899,8 @@
                 <div class="flex flex-col lg:flex-row items-center gap-x-20 gap-y-12">
                     <!-- Emergency image -->
                     <div>
-                        <img class="hidden lg:block rounded-[32px]" style="width: 800px;" src="./assets/images/emergency.jpeg" alt="экстренная помощь десктоп">
-                        <img class="lg:hidden" src="./assets/images/emergency-mobile.webp" alt="экстренная помощь мобильная">
+                        <img class="hidden lg:block rounded-[32px]" style="max-width: 800px;" src="./assets/images/emergency.jpeg" alt="экстренная помощь десктоп">
+                        <img class="lg:hidden rounded-[32px]" src="./assets/images/emergency.jpeg" alt="экстренная помощь мобильная">
                     </div>
                     <!-- Emergency Contents -->
                     <div class="flex flex-col gap-y-4 text-center lg:text-start">
@@ -1056,6 +1393,7 @@
                         <li><a class="quick-access-item" href="#home">Главная</a></li>
                         <li><a class="quick-access-item" href="#services">Услуги</a></li>
                         <li><a class="quick-access-item" href="#promotions">Акции и скидки</a></li>
+                        <li><a class="quick-access-item" href="#contracts">Договоры</a></li>
                         <li><a class="quick-access-item" href="#about">О нас</a></li>
                         <li><a class="quick-access-item" href="#call">Связаться с нами</a></li>
                     </ul>

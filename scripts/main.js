@@ -140,3 +140,40 @@ aElement.forEach(function(item){
         }
     });
 });
+
+// Video Swiper
+const videoSwiper = new Swiper(".video-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: false, // Disable autoplay initially
+    pagination: {
+        el: ".video-swiper .swiper-pagination",
+        clickable: true,
+    },
+});
+
+// Handle video end and advance swiper
+document.querySelectorAll('.video-swiper video').forEach(video => {
+    // Wait for video metadata to load to get duration
+    video.addEventListener('loadedmetadata', () => {
+        // Convert duration to milliseconds
+        const duration = video.duration * 1000;
+        
+        // Set up autoplay with the video duration
+        videoSwiper.params.autoplay = {
+            delay: duration,
+            disableOnInteraction: false,
+        };
+        videoSwiper.autoplay.start();
+    });
+
+    // Ensure video plays when slide becomes active
+    video.addEventListener('play', () => {
+        videoSwiper.autoplay.stop();
+    });
+
+    video.addEventListener('ended', () => {
+        videoSwiper.slideNext();
+    });
+});

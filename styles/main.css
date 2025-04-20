@@ -783,7 +783,7 @@ body{
 }
 
 .post-img::after{
-  background: url(../assets/images/logo.svg) center no-repeat;
+  background: url(../assets/images/logo.png) center no-repeat;
 }
 
 .post-img:hover + .post-publish-date {
@@ -2051,6 +2051,10 @@ body{
         padding: 8px 16px;
         font-size: 14px;
     }
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
 
   
